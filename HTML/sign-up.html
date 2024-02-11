@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img src="../images/function-app.png" alt="Logo" />
+        </div>
+        <div class="nav">
+          <a href="./sign-in.html"><button>Sign In</button></a>
+          <a href="./sign-up.html"><button>Sign Up</button></a>
+        </div>
+      </header>
+      <main>
+        <h2>Create Account</h2>
+        <form action="" method="post">
+          <input
+            type="text"
+            name="fname"
+            class="form-control"
+            placeholder="First Name"
+          />
+          <input
+            type="text"
+            name="mname"
+            class="form-control"
+            placeholder="Middle Name"
+          />
+          <input
+            type="text"
+            name="lname"
+            class="form-control"
+            placeholder="Last Name"
+          />
+          <input
+            type="tel"
+            name="mob"
+            class="form-control"
+            placeholder="Mobile no"
+          />
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="E-mail"
+          />
+          <input
+            type="password"
+            name="password"
+            class="form-control"
+            placeholder="password"
+          />
+          <div class="radio">
+            <input type="radio" name="gender" value="m" checked />Male
+          </div>
+          <div class="radio">
+            <input type="radio" name="gender" value="f" />Female
+          </div>
+          <div class="radio">
+            <input type="radio" name="gender" value="o" />Other
+          </div>
+          <select name="communication" class="form-control">
+            <option value="">Select Option</option>
+            <option value="email" selected>Email</option>
+            <option value="call">Phone</option>
+            <option value="wa">WhatsApp</option>
+            <option value="news">Newsletter</option>
+          </select>
+          <!-- <select name="communication" class="form-control" multiple>
+            <option value="">Select Option</option>
+            <option value="email">Email</option>
+            <option value="call">Phone</option>
+            <option value="wa">WhatsApp</option>
+            <option value="news">Newsletter</option>
+          </select> -->
+          <div><input type="checkbox" name="term" /> Term and Condition</div>
+          <div>
+            <!-- <input type="submit" value="Submit" /> -->
+            <button>Submit</button>
+            <input type="reset" value="reset" />
+            <button>Cancel</button>
+          </div>
+        </form>
+      </main>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
