@@ -4,6 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      header {
+        /* border-bottom-width: 1px;
+        border-bottom-style: double;
+        border-bottom-color: rgb(38, 119, 138); */
+        border-bottom: 1px double rgb(38, 119, 138);
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      form {
+        width: 350px;
+        border: 1px solid lightblue;
+        padding: 5px;
+        margin: auto;
+      }
+
+      form h2 {
+        text-align: center;
+      }
+      .form-control {
+        width: 90%;
+        margin-bottom: 10px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -17,8 +44,8 @@
         </div>
       </header>
       <main>
-        <h2>Create Account</h2>
         <form action="" method="post">
+          <h2>Create Account</h2>
           <input
             type="text"
             name="fname"
