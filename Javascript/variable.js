@@ -24,3 +24,21 @@ console.table({
   location: locationName,
   pin: locationPinCode,
 });
+
+// naming convention
+// varible name shouldn't start with number
+// a-z, A-Z,_,$ - Allowed first char of variable name
+// a-z, A-Z,_,$,0-9 - allowed char in variable name
+
+// var schoolname - don't use
+// var school_name - snake case - allowed but not fully recommended
+// var schoolName - camel case -> full recommended
+
+// for constants
+// const schoolName - camel case -> full recommended
+// const SCHOOL_NAME - recommended
+
+//  for classes
+//   SchoolName - upper camel case(Pascel Naming convention) -> full recommended
+
+// variable(data) type
