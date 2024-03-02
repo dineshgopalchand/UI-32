@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ART | Home Page</title>
-    <style></style>
     <link rel="stylesheet" href="./styles/main.css" />
+    <!-- <script>
+      window.addEventListener("load", () => {
+        console.log("this is home page");
+        document.getElementById("createPortfolio").style.backgroundColor =
+          "red";
+      });
+    </script> -->
+    <script src="./js/test.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -26,7 +33,7 @@
         <!-- h$*6>{header$} -->
 
         <h1>Welcome to museum of Art & photography</h1>
-        <button>Create you art Portfolio</button>
+        <button id="createPortfolio">Create you art Portfolio</button>
         <div>
           <ul>
             <li>
@@ -51,5 +58,10 @@
       </main>
       <footer>Footer</footer>
     </div>
+    <script>
+      console.log("this is home page");
+      document.getElementById("createPortfolio").style.backgroundColor = "red";
+    </script>
+    <!-- <script src="./js/test.js"></script> -->
   </body>
 </html>
