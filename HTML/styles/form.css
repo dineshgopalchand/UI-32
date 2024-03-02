@@ -1,0 +1,14 @@
+form {
+  width: 350px;
+  border: 1px solid lightblue;
+  padding: 5px;
+  margin: auto;
+}
+
+form h2 {
+  text-align: center;
+}
+.form-control {
+  width: 90%;
+  margin-bottom: 10px;
+}
