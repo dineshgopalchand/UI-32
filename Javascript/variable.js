@@ -99,7 +99,8 @@ var nameAddressObject = {
   address: { street1: "st1", street2: "st2", city: "blr", pincode: 560036 },
 };
 
-console.log(nameAddressObject.name.lname);
+console.log("byusing dot operator :", nameAddressObject.name.lname);
+console.log("as an array :", nameAddressObject["name"]["lname"]);
 
 console.log({
   value: nameAddressObject,
@@ -107,3 +108,31 @@ console.log({
   isArray: Array.isArray(nameAddressObject),
   firstVal: nameAddressObject.name.fname,
 });
+
+var nameList = ["Dinesh", "Gopal", "Chand"];
+console.log(nameList[1]);
+var nameAddressList = [
+  nameList,
+  ["st1", "st2", "blr", 560036, ["Dinesh1", "Gopal1", "Chand1"]],
+];
+console.log(nameAddressList[0]);
+console.log(nameAddressList[0][2]);
+console.log(nameAddressList[1][4][1]);
+
+var nameAddressList = [
+  nameList,
+  ["st1", "st2", "blr", 560036, ["Dinesh1", "Gopal1", "Chand1"]],
+];
+console.log(nameAddressList[1][3]);
+console.log(nameAddressList[1][4][1]);
+nameAddressList[1][3] = 560037;
+console.log(nameAddressList);
+console.log(nameAddressList[1][3]);
+nameAddressList[5] = "some value"; // not recommended to update any value by using index
+console.log(nameAddressList);
+console.log(nameAddressList[0]);
+console.log(nameAddressList[1]);
+console.log(nameAddressList[2]);
+console.log(nameAddressList[3]);
+console.log(nameAddressList[4]);
+console.log(nameAddressList[5]);
