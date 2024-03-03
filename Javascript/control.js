@@ -78,3 +78,21 @@ switch (grade) {
 }
 
 console.log(prize);
+
+// Loop=================>
+// for
+// while
+// do while
+// foreach
+// forof
+// forin
+
+// add all number between 1-50000
+// for(initialization; condition checking; increament/descre){}
+let sum = 0;
+for (let num = 1; num <= 5000; num++) {
+  if (num % 2 === 0) {
+    sum += num;
+  }
+}
+console.log(sum);
