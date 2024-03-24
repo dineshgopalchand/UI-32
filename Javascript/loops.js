@@ -29,10 +29,36 @@
 
 // for loop
 
-for (let row = 1; row <= 5; row++) {
-  let patternStr = "";
-  for (let col = 1; col <= row; col++) {
-    patternStr += row;
+// for (let row = 1; row <= 5; row++) {
+//   let patternStr = "";
+//   for (let col = 1; col <= row; col++) {
+//     patternStr += row;
+//   }
+//   console.log(patternStr);
+// }
+
+var nameList = ["Dinesh", "Ryaz", "Afreen"];
+console.log(nameList.length);
+// var nameAddressList = [
+//   ["Dinesh", "Gopal", "Chand"],
+//   ["st1", "st2", "blr", 560036],
+// ];
+
+let isAvailable = false;
+for (let index = 0; index < nameList.length; index++) {
+  console.log(nameList[index]);
+  if (nameList[index] === "Ryaz") {
+    isAvailable = true;
+    break;
   }
-  console.log(patternStr);
 }
+console.log(isAvailable);
+let count = 0;
+for (let index = 0; index < nameList.length; index++) {
+  console.log(nameList[index]);
+  if (nameList[index] === "Ryaz") {
+    count++;
+  }
+}
+console.log(count > 0 ? "Available" : "Missing");
+// console.log(count ? "Available" : "Missing");
