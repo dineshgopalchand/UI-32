@@ -62,3 +62,25 @@ for (let index = 0; index < nameList.length; index++) {
 }
 console.log(count > 0 ? "Available" : "Missing");
 // console.log(count ? "Available" : "Missing");
+
+// forof
+for (const name of nameList) {
+  console.log({ name });
+}
+
+var nameObj = {
+  fname: "Dinesh",
+  mname: "Gopal",
+  lname: "Chand",
+};
+
+console.log(Object.keys(nameObj)); // it will return an array of keys
+
+for (const key of Object.keys(nameObj)) {
+  console.log(nameObj[key]);
+}
+
+// forin
+for (const key in nameObj) {
+  console.log(nameObj[key]);
+}
