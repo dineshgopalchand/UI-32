@@ -4,13 +4,25 @@
 // // inc/desc
 // }
 
-let row = 1;
+// let row = 1;
 
-while (row <= 5) {
+// while (row <= 5) {
+//   let patternStr = "";
+//   for (let col = 1; col <= row; col++) {
+//     patternStr += row;
+//   }
+//   console.log(patternStr);
+//   row++;
+// }
+
+// do while
+let doRow = 1;
+
+do {
   let patternStr = "";
-  for (let col = 1; col <= row; col++) {
-    patternStr += row;
+  for (let col = 1; col <= doRow; col++) {
+    patternStr += doRow;
   }
   console.log(patternStr);
-  row++;
-}
+  doRow++;
+} while (doRow <= 5);
