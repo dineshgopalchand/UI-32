@@ -6,7 +6,7 @@
 
 let row = 1;
 
-while (row <= 0) {
+while (row <= 5) {
   let patternStr = "";
   for (let col = 1; col <= row; col++) {
     patternStr += row;
