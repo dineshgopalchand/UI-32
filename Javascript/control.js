@@ -79,6 +79,24 @@ switch (grade) {
 
 console.log(prize);
 
+const level = "0";
+switch (level) {
+  case "3":
+    points = 1500;
+    console.log({ points });
+
+  case "2":
+    points = 1000;
+    console.log({ points });
+
+  case "1":
+    points = 500;
+    console.log({ points });
+  default:
+    points = 5;
+    console.log({ points });
+}
+
 // Loop=================>
 // for
 // while
@@ -96,3 +114,28 @@ for (let num = 1; num <= 5000; num++) {
   }
 }
 console.log(sum);
+
+searchElement = 9;
+
+classRoom = [
+  [1, 32, 433, 5, 3],
+  [3, 54, 3, 2, 4, 5, 665],
+  [35433, 3, 4, 23, 2, 4, 3],
+  [4, 322, 23, 9, 5433, 32],
+  [8, 8, 6, 5, 65, 44, 67],
+];
+for (const cr of classRoom) {
+  let found = false;
+  for (const student of cr) {
+    if (student == 9) {
+      console.log("I found you");
+      found = true;
+      break; // it will break nearest loop
+    } else {
+      console.log("Ops! missed");
+    }
+  }
+  if (found) {
+    break;
+  }
+}
