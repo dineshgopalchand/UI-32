@@ -52,7 +52,7 @@
 
 // sort
 
-var nameList1 = ["Dinesh", "Gopal", "Chand", "chand", "a", "ab"];
+var nameList1 = ["Dinesh", "Gopal", "Chand", "chand", "a", "ab", "az", "ac"];
 // nameList1.sort();
 // nameList1.sort(function (n1, n2) {
 //   if (n1.length > n2.length) {
@@ -61,5 +61,27 @@ var nameList1 = ["Dinesh", "Gopal", "Chand", "chand", "a", "ab"];
 //     return -1;
 //   }
 // });
-nameList1.sort((n1, n2) => (n1.length > n2.length ? 1 : -1));
-console.log(nameList1);
+// nameList1.sort((n1, n2) => (n1.length > n2.length ? 1 : -1));
+nameList1
+  .sort()
+  .reverse()
+  .sort((n1, n2) => (n1.length > n2.length ? 1 : -1));
+const formattedList = nameList1.map((item) => {
+  return { name: item, firstChar: item[0].toUpperCase() };
+});
+console.log({ nameList1, formattedList });
+// ['a',     'ab',
+// 'ac',    'az',
+// 'Chand', 'Gopal',
+// 'chand', 'Dinesh']
+
+// [{ name:'a'},{name:'ab'}  ,...  ]
+
+// nameListObj = [];
+// for (const name of nameList1) {
+//   nameListObj.push({ name, firstChar: name[0].toUpperCase() });
+// }
+// console.log(nameListObj);
+
+// console.log(nameList1.filter((name) => name.indexOf("c") != -1));
+console.log(nameList1.filter((name) => name.match(/^c/i)));
